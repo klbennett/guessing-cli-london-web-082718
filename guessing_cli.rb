@@ -1,6 +1,6 @@
 def run_guessing_game
 guess = nil
-while !(guess == "exit")
+until guess == "exit"
 answer = rand(1..6)
 puts "Guess a number between 1 and 6."
 guess = gets.chomp
@@ -12,5 +12,3 @@ end
 end
 puts "Goodbye!"
 end
-
-run_guessing_game
